@@ -1,0 +1,105 @@
+body{
+    box-sizing: border-box;
+    font-family: "Helvetica", "Times New Roman";
+}
+#header-nav{
+    border-radius: 0;
+}
+
+#logo-img{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.navbar-brand h1{
+    font-family: "Helvetica Neue", "Sans";
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    line-height: 0.75;
+}
+
+
+#nav-list li{
+    text-align: center;
+}
+
+#introduction{
+    font-family: "Helvetica", "Sans";
+    font-size: 20px;
+    color: #737373;
+    margin-top: 20px;
+}
+.Name{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.descp{
+    font-size: 1.5em;
+}
+
+
+#jumbotron{
+    background: url("../img/jumbotron.jpg") no-repeat;
+    clear: both;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#login{
+    position: relative;
+    left: 400px;
+    top: 150px;
+}
+
+input{
+    height: 65px;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.submit{
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: 70px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    background: #24a0ed;
+}
+
+#loggedIn{
+    color: #ffffff;
+}
+
+span{
+    width: 100%;
+}
+
+#label{
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.block-1 , .block-2{
+    background: #1a1a1a;
+    padding: 20px;
+    color: white;
+}
+
+.block-2{
+    background: #d9d9d9;
+    color: black;
+}
+
+@media (max-width: 768px){
+    .navbar-brand h1{
+        font-size: 20px;
+    }
+    #jumbotron{
+        height: 200px;
+    }
+}

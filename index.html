@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <title>TEDxNITW</title>
+    </head>
+    <body>
+        <header>
+            <nav id="header-nav" class="navbar navbar-default">
+                  <div class="navbar-header">
+                    <a href="index.html" class="pull-left">
+                      <img src="img/logo.jpg" alt="Logo" id="logo-img">
+                    </a>
+                    <div class="navbar-brand">
+                        <h1>Ideas Worth Sharing</h1>
+                    </div>
+                    <button type="button" id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <div id="collapsable-nav" class="collapse navbar-collapse">
+                        <ul id="nav-list" class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="index.html">Watch</a>
+                            </li>
+                            <li>
+                                <a href="discover.html">Discover</a>
+                            </li>
+                            <li>
+                                <a href="attend.html">Attend</a>
+                            </li>
+                        </ul>
+                    </div>
+            </nav>
+          
+        </header>
+        <div class="container">
+            <div id="jumbotron" ng-app="loginApp">
+                <div id="login" ng-controller="loginController as ctrl">
+                    <div ng-if="ctrl.logSTAT===0">
+                        <input type="email" placeholder="abc@tedx.nitw.ac.in" ng-model="ctrl.name">
+                        <br>
+                        <input type="password" placeholder="password" ng-model="ctrl.pass">
+                        <br>
+                        <button class="submit" ng-click = "ctrl.submit()">Submit</button>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            <div id="introduction">
+                <div id="left" class="col-md-6">
+                    In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x&nbsp=&nbspindependently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized (subject to certain rules and regulations).
+                </div>
+                <div id="right" class="col-md-6">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.5659664511395!2d79.52885753384986!3d17.983813430632335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fba36d61d21%3A0x853a7c09c331d5cc!2sNITW%20Auditorium!5e0!3m2!1sen!2sin!4v1593963537777!5m2!1sen!2sin" width="550" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="block-1">
+            <div class="container">
+                <section class="col-md-6">
+                    <img src="img/person-1.jpg" height="400">
+                </section>
+                <section class="col-md-6 text-center descp">
+                    <div class="Name">Lorem Ipsum Dolor</div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit elit, scelerisque sit amet massa sit amet, tempor rhoncus elit. Suspendisse pharetra interdum diam a sollicitudin. Ut scelerisque eros nibh, vel vehicula arcu interdum vel. Proin tincidunt magna et pretium hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit elit, scelerisque sit amet massa sit amet, tempor rhoncus elit.
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="block-2">
+            <div class="container">
+                <section class="col-md-6">
+                    <img src="img/person-1.jpg" height="400">
+                </section>
+                <section class="col-md-6 text-center descp">
+                    <div class="Name">Lorem Ipsum Dolor</div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit elit, scelerisque sit amet massa sit amet, tempor rhoncus elit. Suspendisse pharetra interdum diam a sollicitudin. Ut scelerisque eros nibh, vel vehicula arcu interdum vel. Proin tincidunt magna et pretium hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit elit, scelerisque sit amet massa sit amet, tempor rhoncus elit.
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <footer class="panel-footer">
+            <div class="row">
+                <section id="hours" class="col-sm-4 text-center">
+                  <span>Programs</span><br>
+                  <a href="program1.html">Program 1</a><br>
+                  <a href="program1.html">Program 2</a><br>
+                  <a href="program1.html">Program 3</a><br>
+                  <a href="program1.html">Program 4</a>
+                  <hr class="visible-xs">
+                </section>
+                <section id="address" class="col-sm-4 text-center">
+                  <span>Address:</span><br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elit elit, scelerisque sit amet massa sit amet, tempor rhoncus elit. Suspendisse pharetra interdum diam a sollicitudin. Ut scelerisque eros nibh, vel vehicula arcu interdum vel. Proin tincidunt magna et pretium hendrerit
+                  <hr class="visible-xs">
+                </section>
+                <section id="testimonials" class="col-sm-4 text-center">
+                  <span>Follow Us: </span><br>
+                  <a href="program1.html">Facebook</a><br>
+                  <a href="program1.html">Twitter</a><br>
+                  <a href="program1.html">Instagram</a><br>
+                </section>
+              </div>
+              <div class="text-center">&copy; TED<sup>x</sup>NITW 2020</div>
+            </div>
+        </footer>
+
+        
+       
+    </body>
+</html>
